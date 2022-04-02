@@ -16,7 +16,10 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        
+        if let navVC = navController {
+            let mainCoordinator = AuthenticationCoordinator(navVC)
+            mainCoordinator.start()
+        }
     }
     
     func finish() {
