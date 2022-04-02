@@ -22,22 +22,25 @@ class AuthenticationCoordinator: Coordinator {
         navController?.pushViewController(authenticationViewController, animated: true)
     }
     
-    func startAuthenticationViewController() {
-        let authenticationViewController = AuthenticationViewController.instantiate(from: .authenticationStoryboard)
-        authenticationViewController.coordinator = self
-        navController?.pushViewController(authenticationViewController, animated: true)
+    func startLoginScreenViewController(isPushedAgain: Bool) {
+        if isPushedAgain {
+            navController?.popViewController(animated: true)
+        } else {
+            let loginScreenViewController = LoginScreenViewController.instantiate(from: .authenticationStoryboard)
+            loginScreenViewController.coordinator = self
+            navController?.pushViewController(loginScreenViewController, animated: true)
+            
+        }
     }
     
-    func startLoginScreenViewController() {
-        let loginScreenViewController = LoginScreenViewController.instantiate(from: .authenticationStoryboard)
-        loginScreenViewController.coordinator = self
-        navController?.pushViewController(loginScreenViewController, animated: true)
-    }
-    
-    func startSignUpScreenViewController() {
-        let signUpScreenViewController = SignUpScreenViewController.instantiate(from: .authenticationStoryboard)
-        signUpScreenViewController.coordinator = self
-        navController?.pushViewController(signUpScreenViewController, animated: true)
+    func startSignUpScreenViewController(isPushedAgain: Bool) {
+        if isPushedAgain {
+            navController?.popViewController(animated: true)
+        } else {
+            let signUpScreenViewController = SignUpScreenViewController.instantiate(from: .authenticationStoryboard)
+            signUpScreenViewController.coordinator = self
+            navController?.pushViewController(signUpScreenViewController, animated: true)
+        }
     }
     
     func startForgotPassewordViewController() {

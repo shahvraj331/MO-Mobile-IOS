@@ -22,7 +22,8 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
     
     //MARK: - Actions
@@ -35,7 +36,7 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func changeButtonAction(_ sender: UIButton) {
-        coordinator?.startLoginScreenViewController()
+        coordinator?.startLoginScreenViewController(isPushedAgain: false)
     }
     
 }// End of Class
