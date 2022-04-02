@@ -38,6 +38,18 @@ class AuthenticationCoordinator: Coordinator {
         navController?.pushViewController(signUpScreenViewController, animated: true)
     }
     
+    func startForgotPassewordViewController() {
+        let forgotPassewordViewController = ForgotPassewordViewController.instantiate(from: .authenticationStoryboard)
+        forgotPassewordViewController.coordinator = self
+        navController?.pushViewController(forgotPassewordViewController, animated: true)
+    }
+    
+    func startResetPasswordViewController() {
+        let resetPasswordViewController = ResetPasswordViewController.instantiate(from: .authenticationStoryboard)
+        resetPasswordViewController.coordinator = self
+        navController?.pushViewController(resetPasswordViewController, animated: true)
+    }
+    
     func finish() {
         
     }

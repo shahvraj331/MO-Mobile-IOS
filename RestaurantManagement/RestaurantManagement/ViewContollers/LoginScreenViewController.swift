@@ -37,7 +37,7 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
     }
     
     @IBAction func forgotPasswordAction(_ sender: UIButton) {
-       
+        coodinator?.startForgotPassewordViewController()
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {

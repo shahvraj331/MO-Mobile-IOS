@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361C403C27F851C000A40020 /* ForgotPassewordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */; };
+		361C403E27F851CF00A40020 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */; };
 		366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42E827F82AC300679770 /* LoginScreenViewController.swift */; };
 		366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */; };
 		366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EC27F82BE800679770 /* AuthenticationViewController.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		1A4C7FE6AFEC630BA0987592 /* Pods-RestaurantManagementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagementTests.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagementTests/Pods-RestaurantManagementTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A97255FFADD5BCDAA15F72F /* Pods-RestaurantManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassewordViewController.swift; sourceTree = "<group>"; };
+		361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		366E42E827F82AC300679770 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
 		366E42EC27F82BE800679770 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				366E42E827F82AC300679770 /* LoginScreenViewController.swift */,
 				366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */,
 				366E42EC27F82BE800679770 /* AuthenticationViewController.swift */,
+				361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */,
+				361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */,
 			);
 			path = ViewContollers;
 			sourceTree = "<group>";
@@ -456,12 +462,14 @@
 			files = (
 				A027EB5B27F8183800716408 /* Coordinator.swift in Sources */,
 				A027EB2E27F8168600716408 /* ViewController.swift in Sources */,
+				361C403C27F851C000A40020 /* ForgotPassewordViewController.swift in Sources */,
 				366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */,
 				366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */,
 				A027EB5D27F8185100716408 /* AppCoordinator.swift in Sources */,
 				A027EB2A27F8168600716408 /* AppDelegate.swift in Sources */,
 				A027EB6227F818EE00716408 /* Constants.swift in Sources */,
 				366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */,
+				361C403E27F851CF00A40020 /* ResetPasswordViewController.swift in Sources */,
 				A027EB2C27F8168600716408 /* SceneDelegate.swift in Sources */,
 				366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */,
 				A027EB6027F818AF00716408 /* Storyboarded.swift in Sources */,
