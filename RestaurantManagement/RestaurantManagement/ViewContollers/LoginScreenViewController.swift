@@ -19,7 +19,7 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
     @IBOutlet weak var btnSignUp: UIButton!
     
     //MARK: - Variables
-    var coodinator: AuthenticationCoordinator?
+    var coordinator: AuthenticationCoordinator?
     
     //MARK: - UIViewController
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
     }
     
     @IBAction func signUpButtonAction(_ sender: UIButton) {
-        coodinator?.startSignUpScreenViewController()
+        coordinator?.startSignUpScreenViewController()
     }
 
 }// End of Class

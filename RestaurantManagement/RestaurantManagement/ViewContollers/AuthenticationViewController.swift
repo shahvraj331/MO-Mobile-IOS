@@ -9,13 +9,8 @@ import UIKit
 
 class AuthenticationViewController: UIViewController, Storyboarded  {
 
-    //MARK: - Outlets
-    @IBOutlet weak var btnLogin: UIButton!
-    @IBOutlet weak var btnSignUp: UIButton!
-    @IBOutlet weak var btnLater: UIButton!
-    
     //MARK: - Variables
-    var coodinator: AuthenticationCoordinator?
+    var coordinator: AuthenticationCoordinator?
     
     //MARK: - UIViewController
     override func viewDidLoad() {
@@ -25,11 +20,11 @@ class AuthenticationViewController: UIViewController, Storyboarded  {
     
     //MARK: - Actions
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        coodinator?.startLoginScreenViewController()
+        coordinator?.startLoginScreenViewController()
     }
     
     @IBAction func signUpButtonAction(_ sender: UIButton) {
-        coodinator?.startSignUpScreenViewController()
+        coordinator?.startSignUpScreenViewController()
     }
     
     @IBAction func laterButtonAction(_ sender: UIButton) {

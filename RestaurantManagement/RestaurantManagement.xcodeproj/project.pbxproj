@@ -14,6 +14,7 @@
 		366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EC27F82BE800679770 /* AuthenticationViewController.swift */; };
 		366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */; };
 		5748C01A8456065AF58C7DAE /* Pods_RestaurantManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4645E6B95E7746C2D850CD7 /* Pods_RestaurantManagement.framework */; };
+		6464290927F876580022A43F /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6464290827F876580022A43F /* Authentication.storyboard */; };
 		8082A2992E9BE43217F1DF86 /* Pods_RestaurantManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */; };
 		986B83E71A7D11DB7B1768CC /* Pods_RestaurantManagement_RestaurantManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2926C4D34141151495AC0A9 /* Pods_RestaurantManagement_RestaurantManagementUITests.framework */; };
 		A027EB2A27F8168600716408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027EB2927F8168600716408 /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56090904FD58A2B212BBCF87 /* Pods-RestaurantManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.release.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.release.xcconfig"; sourceTree = "<group>"; };
+		6464290827F876580022A43F /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		80CF45CB6EB7AABB337F5A66 /* Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement-RestaurantManagementUITests/Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		936148457CF82927995AADFC /* Pods-RestaurantManagement-RestaurantManagementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement-RestaurantManagementUITests.release.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement-RestaurantManagementUITests/Pods-RestaurantManagement-RestaurantManagementUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A027EB2627F8168600716408 /* RestaurantManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,14 @@
 			path = ViewContollers;
 			sourceTree = "<group>";
 		};
+		6464290727F876580022A43F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6464290827F876580022A43F /* Authentication.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		82FAEE24D88131799CF20A2C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		A027EB2827F8168600716408 /* RestaurantManagement */ = {
 			isa = PBXGroup;
 			children = (
+				6464290727F876580022A43F /* Storyboards */,
 				366E42E727F829CB00679770 /* ViewContollers */,
 				A027EB5E27F8188700716408 /* Utils */,
 				A027EB5927F8182400716408 /* Coordinator */,
@@ -333,6 +344,7 @@
 				A027EB3627F8168700716408 /* LaunchScreen.storyboard in Resources */,
 				A027EB3327F8168700716408 /* Assets.xcassets in Resources */,
 				A027EB3127F8168600716408 /* Main.storyboard in Resources */,
+				6464290927F876580022A43F /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,9 @@ class AuthenticationCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let authenticationViewController = AuthenticationViewController.instantiate(from: .authenticationStoryboard)
+        authenticationViewController.coordinator = self
+        navController?.pushViewController(authenticationViewController, animated: true)
     }
     
     func startAuthenticationViewController() {
