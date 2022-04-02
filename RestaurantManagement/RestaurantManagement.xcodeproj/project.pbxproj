@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42E827F82AC300679770 /* LoginScreenViewController.swift */; };
+		366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */; };
+		366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EC27F82BE800679770 /* AuthenticationViewController.swift */; };
+		366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */; };
 		5748C01A8456065AF58C7DAE /* Pods_RestaurantManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4645E6B95E7746C2D850CD7 /* Pods_RestaurantManagement.framework */; };
 		8082A2992E9BE43217F1DF86 /* Pods_RestaurantManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */; };
 		986B83E71A7D11DB7B1768CC /* Pods_RestaurantManagement_RestaurantManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2926C4D34141151495AC0A9 /* Pods_RestaurantManagement_RestaurantManagementUITests.framework */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		1A4C7FE6AFEC630BA0987592 /* Pods-RestaurantManagementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagementTests.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagementTests/Pods-RestaurantManagementTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A97255FFADD5BCDAA15F72F /* Pods-RestaurantManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		366E42E827F82AC300679770 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
+		366E42EC27F82BE800679770 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56090904FD58A2B212BBCF87 /* Pods-RestaurantManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.release.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.release.xcconfig"; sourceTree = "<group>"; };
 		80CF45CB6EB7AABB337F5A66 /* Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement-RestaurantManagementUITests/Pods-RestaurantManagement-RestaurantManagementUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +107,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366E42E727F829CB00679770 /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				366E42E827F82AC300679770 /* LoginScreenViewController.swift */,
+				366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */,
+				366E42EC27F82BE800679770 /* AuthenticationViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
 		82FAEE24D88131799CF20A2C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +155,7 @@
 		A027EB2827F8168600716408 /* RestaurantManagement */ = {
 			isa = PBXGroup;
 			children = (
+				366E42E727F829CB00679770 /* ViewContollers */,
 				A027EB5E27F8188700716408 /* Utils */,
 				A027EB5927F8182400716408 /* Coordinator */,
 				A027EB2927F8168600716408 /* AppDelegate.swift */,
@@ -172,6 +191,7 @@
 			children = (
 				A027EB5A27F8183800716408 /* Coordinator.swift */,
 				A027EB5C27F8185100716408 /* AppCoordinator.swift */,
+				366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -436,10 +456,14 @@
 			files = (
 				A027EB5B27F8183800716408 /* Coordinator.swift in Sources */,
 				A027EB2E27F8168600716408 /* ViewController.swift in Sources */,
+				366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */,
+				366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */,
 				A027EB5D27F8185100716408 /* AppCoordinator.swift in Sources */,
 				A027EB2A27F8168600716408 /* AppDelegate.swift in Sources */,
 				A027EB6227F818EE00716408 /* Constants.swift in Sources */,
+				366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */,
 				A027EB2C27F8168600716408 /* SceneDelegate.swift in Sources */,
+				366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */,
 				A027EB6027F818AF00716408 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

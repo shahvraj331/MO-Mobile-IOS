@@ -10,7 +10,7 @@ import Foundation
 
 /// Storyboards
 enum Storyboard: String {
-    
+    case authenticationStoryboard = "Authentication"
 }
 
 /// Storyboarded
