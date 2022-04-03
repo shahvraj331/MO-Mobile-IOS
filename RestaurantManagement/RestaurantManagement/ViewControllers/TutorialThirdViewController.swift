@@ -25,9 +25,4 @@ class TutorialThirdViewController: UIViewController, Storyboarded {
         coordinator?.skipTutorial()
     }
     
-    
-    @IBAction func loginAction(_ sender: UIButton) {
-        coordinator?.skipTutorial()
-    }
-    
 }//End of class

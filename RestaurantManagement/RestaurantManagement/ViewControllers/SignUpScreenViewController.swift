@@ -24,9 +24,7 @@ class SignUpScreenViewController: UIViewController, Storyboarded  {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTapAround()
-        self.navigationItem.backButtonTitle = ""
-        self.navigationController?.navigationBar.tintColor = UIColor.orange
+        initView()
     }
     
     //MARK: - Actions
@@ -54,6 +52,14 @@ class SignUpScreenViewController: UIViewController, Storyboarded  {
             let userDefaults = myUserDefaults()
             userDefaults.setLoggedIn(value: String(responseData.customerId))
         }
+        coordinator?.onLoginSucess()
+    }
+    
+    //MARK: - File private functions
+    fileprivate func initView() {
+        hideKeyboardWhenTapAround()
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
 
 }// End of Class

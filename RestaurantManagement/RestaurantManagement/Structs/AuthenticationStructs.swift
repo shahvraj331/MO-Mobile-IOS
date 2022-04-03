@@ -12,7 +12,7 @@ struct SignUpUser {
     let email: String
     let password: String
     
-    var signUpUserDict: [String: Any] {
+    var signUpUserDict: [String: String] {
         return [
             "name": fullname,
             "email": email,
@@ -34,7 +34,7 @@ struct loginUser {
     let email: String
     let password: String
     
-    var loginUserDict: [String: Any] {
+    var loginUserDict: [String: String] {
         return [
             "email": email,
             "password": password
