@@ -1,0 +1,99 @@
+%PDF-1.7
+
+1 0 obj
+  << /Length 2 0 R
+     /Range [ 0.000000 1.000000 0.000000 1.000000 0.000000 1.000000 ]
+     /Domain [ 0.000000 1.000000 ]
+     /FunctionType 4
+  >>
+stream
+{  0.980392 exch 0.294118 exch 0.047059 exch dup 0.000000 gt { exch pop exch pop exch pop dup 0.000000 sub -0.713725 mul 0.980392 add exch dup 0.000000 sub -0.035294 mul 0.294118 add exch dup 0.000000 sub 0.270588 mul 0.047059 add exch } if dup 1.000000 gt { exch pop exch pop exch pop 0.266667 exch 0.258824 exch 0.317647 exch } if pop }
+endstream
+endobj
+
+2 0 obj
+  338
+endobj
+
+3 0 obj
+  << /Pattern << /P1 << /Matrix [ 0.000000 -460.000061 460.000061 0.000000 -502.000061 460.000000 ]
+                        /Shading << /Coords [ 0.000000 0.000000 1.000000 0.000000 ]
+                                    /ColorSpace /DeviceRGB
+                                    /Function 1 0 R
+                                    /Domain [ 0.000000 1.000000 ]
+                                    /ShadingType 2
+                                    /Extend [ true true ]
+                                 >>
+                        /PatternType 2
+                        /Type /Pattern
+                     >> >> >>
+endobj
+
+4 0 obj
+  << /Length 5 0 R >>
+stream
+/DeviceRGB CS
+/DeviceRGB cs
+q
+1.000000 0.000000 -0.000000 1.000000 -42.000000 0.000000 cm
+/Pattern cs
+/P1 scn
+460.000000 230.000000 m
+460.000000 102.974518 357.025482 0.000000 230.000000 0.000000 c
+102.974510 0.000000 0.000000 102.974518 0.000000 230.000000 c
+0.000000 357.025482 102.974510 460.000000 230.000000 460.000000 c
+357.025482 460.000000 460.000000 357.025482 460.000000 230.000000 c
+h
+f
+n
+Q
+
+endstream
+endobj
+
+5 0 obj
+  402
+endobj
+
+6 0 obj
+  << /Annots []
+     /Type /Page
+     /MediaBox [ 0.000000 0.000000 375.000000 230.000000 ]
+     /Resources 3 0 R
+     /Contents 4 0 R
+     /Parent 7 0 R
+  >>
+endobj
+
+7 0 obj
+  << /Kids [ 6 0 R ]
+     /Count 1
+     /Type /Pages
+  >>
+endobj
+
+8 0 obj
+  << /Pages 7 0 R
+     /Type /Catalog
+  >>
+endobj
+
+xref
+0 9
+0000000000 65535 f
+0000000010 00000 n
+0000000532 00000 n
+0000000554 00000 n
+0000001184 00000 n
+0000001642 00000 n
+0000001664 00000 n
+0000001839 00000 n
+0000001913 00000 n
+trailer
+<< /ID [ (some) (id) ]
+   /Root 8 0 R
+   /Size 9
+>>
+startxref
+1972
+%%EOF

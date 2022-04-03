@@ -14,7 +14,7 @@ class ForgotPassewordViewController: UIViewController, Storyboarded {
     @IBOutlet weak var btnSubmit: UIButton!
     
     //MARK: - Variables
-    var coodinator: AuthenticationCoordinator?
+    var coordinator: AuthenticationCoordinator?
     
     //MARK: - UIViewController
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class ForgotPassewordViewController: UIViewController, Storyboarded {
     
     //MARK: - Actions
     @IBAction func submitButtonAction(_ sender: UIButton) {
-        coodinator?.startResetPasswordViewController()
+        coordinator?.startResetPasswordViewController()
     }
     
 }// End of Class

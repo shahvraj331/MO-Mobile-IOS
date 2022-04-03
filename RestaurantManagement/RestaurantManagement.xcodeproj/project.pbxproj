@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		361C403C27F851C000A40020 /* ForgotPassewordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */; };
 		361C403E27F851CF00A40020 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */; };
+		361C404127F8757400A40020 /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361C404027F8757400A40020 /* HomeScreenStoryboard.storyboard */; };
+		361C404527F87F7A00A40020 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404427F87F7A00A40020 /* HomeScreenViewController.swift */; };
+		361C404727F87FC800A40020 /* MenuScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404627F87FC800A40020 /* MenuScreenViewController.swift */; };
+		361C404927F8800200A40020 /* CardScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404827F8800200A40020 /* CardScreenViewController.swift */; };
+		361C404B27F8804300A40020 /* FavouriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404A27F8804300A40020 /* FavouriteScreenViewController.swift */; };
+		361C404D27F8807400A40020 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404C27F8807400A40020 /* ProfileScreenViewController.swift */; };
+		361C404F27F881F500A40020 /* HomeScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C404E27F881F500A40020 /* HomeScreenCoordinator.swift */; };
 		366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42E827F82AC300679770 /* LoginScreenViewController.swift */; };
 		366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */; };
 		366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EC27F82BE800679770 /* AuthenticationViewController.swift */; };
 		366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */; };
+		36CA1C3827F968C700B15600 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F4F8BD27F96550009ADE5B /* Authentication.storyboard */; };
+		36CA1C3C27F968F900B15600 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1C3A27F968F900B15600 /* TableViewCell.swift */; };
+		36CA1C3D27F968F900B15600 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1C3B27F968F900B15600 /* TableViewCell.xib */; };
+		36F4F8B627F950A1009ADE5B /* MenuAndTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4F8B527F950A1009ADE5B /* MenuAndTableViewController.swift */; };
+		36F4F8B827F951A0009ADE5B /* TabelBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4F8B727F951A0009ADE5B /* TabelBookingViewController.swift */; };
+		36F4F8BA27F95437009ADE5B /* FavourieScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4F8B927F95437009ADE5B /* FavourieScreenCollectionViewCell.swift */; };
 		5748C01A8456065AF58C7DAE /* Pods_RestaurantManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4645E6B95E7746C2D850CD7 /* Pods_RestaurantManagement.framework */; };
-		6464290927F876580022A43F /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6464290827F876580022A43F /* Authentication.storyboard */; };
 		8082A2992E9BE43217F1DF86 /* Pods_RestaurantManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */; };
 		986B83E71A7D11DB7B1768CC /* Pods_RestaurantManagement_RestaurantManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2926C4D34141151495AC0A9 /* Pods_RestaurantManagement_RestaurantManagementUITests.framework */; };
 		A027EB2A27F8168600716408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027EB2927F8168600716408 /* AppDelegate.swift */; };
@@ -54,10 +66,25 @@
 		1A97255FFADD5BCDAA15F72F /* Pods-RestaurantManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassewordViewController.swift; sourceTree = "<group>"; };
 		361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		361C404027F8757400A40020 /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		361C404427F87F7A00A40020 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		361C404627F87FC800A40020 /* MenuScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenViewController.swift; sourceTree = "<group>"; };
+		361C404827F8800200A40020 /* CardScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenViewController.swift; sourceTree = "<group>"; };
+		361C404A27F8804300A40020 /* FavouriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteScreenViewController.swift; sourceTree = "<group>"; };
+		361C404C27F8807400A40020 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		361C404E27F881F500A40020 /* HomeScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCoordinator.swift; sourceTree = "<group>"; };
 		366E42E827F82AC300679770 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
 		366E42EC27F82BE800679770 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		36CA1C3A27F968F900B15600 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		36CA1C3B27F968F900B15600 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		36F4F8AF27F8FCFE009ADE5B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		36F4F8B027F8FCFE009ADE5B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		36F4F8B527F950A1009ADE5B /* MenuAndTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAndTableViewController.swift; sourceTree = "<group>"; };
+		36F4F8B727F951A0009ADE5B /* TabelBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelBookingViewController.swift; sourceTree = "<group>"; };
+		36F4F8B927F95437009ADE5B /* FavourieScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavourieScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		36F4F8BD27F96550009ADE5B /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		5257AC5E90EC447F1BEDA1C0 /* Pods_RestaurantManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56090904FD58A2B212BBCF87 /* Pods-RestaurantManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantManagement.release.xcconfig"; path = "Target Support Files/Pods-RestaurantManagement/Pods-RestaurantManagement.release.xcconfig"; sourceTree = "<group>"; };
 		6464290827F876580022A43F /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
@@ -113,24 +140,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361C403F27F8754000A40020 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				36F4F8BD27F96550009ADE5B /* Authentication.storyboard */,
+				361C404027F8757400A40020 /* HomeScreenStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		366E42E727F829CB00679770 /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
 				366E42E827F82AC300679770 /* LoginScreenViewController.swift */,
-				366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */,
 				366E42EC27F82BE800679770 /* AuthenticationViewController.swift */,
+				366E42EA27F82B0700679770 /* SignUpScreenViewController.swift */,
 				361C403B27F851C000A40020 /* ForgotPassewordViewController.swift */,
 				361C403D27F851CF00A40020 /* ResetPasswordViewController.swift */,
+				361C404427F87F7A00A40020 /* HomeScreenViewController.swift */,
+				361C404627F87FC800A40020 /* MenuScreenViewController.swift */,
+				361C404827F8800200A40020 /* CardScreenViewController.swift */,
+				361C404A27F8804300A40020 /* FavouriteScreenViewController.swift */,
+				361C404C27F8807400A40020 /* ProfileScreenViewController.swift */,
+				36F4F8B527F950A1009ADE5B /* MenuAndTableViewController.swift */,
+				36F4F8B727F951A0009ADE5B /* TabelBookingViewController.swift */,
+				36F4F8B927F95437009ADE5B /* FavourieScreenCollectionViewCell.swift */,
 			);
 			path = ViewContollers;
 			sourceTree = "<group>";
 		};
-		6464290727F876580022A43F /* Storyboards */ = {
+		36CA1C3927F968F900B15600 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				36CA1C3A27F968F900B15600 /* TableViewCell.swift */,
+				36CA1C3B27F968F900B15600 /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36F4F8BC27F964FE009ADE5B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				36F4F8AF27F8FCFE009ADE5B /* TableViewCell.swift */,
+				36F4F8B027F8FCFE009ADE5B /* TableViewCell.xib */,
 				6464290827F876580022A43F /* Authentication.storyboard */,
 			);
-			path = Storyboards;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		82FAEE24D88131799CF20A2C /* Pods */ = {
@@ -155,6 +210,7 @@
 				A027EB2727F8168600716408 /* Products */,
 				82FAEE24D88131799CF20A2C /* Pods */,
 				D5F9DD02D8F58BF00ACA0AC6 /* Frameworks */,
+				36F4F8BC27F964FE009ADE5B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +227,8 @@
 		A027EB2827F8168600716408 /* RestaurantManagement */ = {
 			isa = PBXGroup;
 			children = (
-				6464290727F876580022A43F /* Storyboards */,
+				36CA1C3927F968F900B15600 /* Cell */,
+				361C403F27F8754000A40020 /* Storyboards */,
 				366E42E727F829CB00679770 /* ViewContollers */,
 				A027EB5E27F8188700716408 /* Utils */,
 				A027EB5927F8182400716408 /* Coordinator */,
@@ -209,6 +266,7 @@
 				A027EB5A27F8183800716408 /* Coordinator.swift */,
 				A027EB5C27F8185100716408 /* AppCoordinator.swift */,
 				366E42EE27F832DF00679770 /* AuthenticationCoordinator.swift */,
+				361C404E27F881F500A40020 /* HomeScreenCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -341,10 +399,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CA1C3827F968C700B15600 /* Authentication.storyboard in Resources */,
+				361C404127F8757400A40020 /* HomeScreenStoryboard.storyboard in Resources */,
+				36CA1C3D27F968F900B15600 /* TableViewCell.xib in Resources */,
 				A027EB3627F8168700716408 /* LaunchScreen.storyboard in Resources */,
 				A027EB3327F8168700716408 /* Assets.xcassets in Resources */,
 				A027EB3127F8168600716408 /* Main.storyboard in Resources */,
-				6464290927F876580022A43F /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,17 +534,27 @@
 			files = (
 				A027EB5B27F8183800716408 /* Coordinator.swift in Sources */,
 				A027EB2E27F8168600716408 /* ViewController.swift in Sources */,
+				36F4F8BA27F95437009ADE5B /* FavourieScreenCollectionViewCell.swift in Sources */,
+				361C404D27F8807400A40020 /* ProfileScreenViewController.swift in Sources */,
+				361C404927F8800200A40020 /* CardScreenViewController.swift in Sources */,
+				36F4F8B827F951A0009ADE5B /* TabelBookingViewController.swift in Sources */,
 				361C403C27F851C000A40020 /* ForgotPassewordViewController.swift in Sources */,
 				366E42ED27F82BE800679770 /* AuthenticationViewController.swift in Sources */,
+				36CA1C3C27F968F900B15600 /* TableViewCell.swift in Sources */,
 				366E42E927F82AC300679770 /* LoginScreenViewController.swift in Sources */,
+				361C404727F87FC800A40020 /* MenuScreenViewController.swift in Sources */,
 				A027EB5D27F8185100716408 /* AppCoordinator.swift in Sources */,
+				361C404B27F8804300A40020 /* FavouriteScreenViewController.swift in Sources */,
+				36F4F8B627F950A1009ADE5B /* MenuAndTableViewController.swift in Sources */,
 				A027EB2A27F8168600716408 /* AppDelegate.swift in Sources */,
 				A027EB6227F818EE00716408 /* Constants.swift in Sources */,
+				361C404F27F881F500A40020 /* HomeScreenCoordinator.swift in Sources */,
 				366E42EF27F832DF00679770 /* AuthenticationCoordinator.swift in Sources */,
 				361C403E27F851CF00A40020 /* ResetPasswordViewController.swift in Sources */,
 				A027EB2C27F8168600716408 /* SceneDelegate.swift in Sources */,
 				366E42EB27F82B0700679770 /* SignUpScreenViewController.swift in Sources */,
 				A027EB6027F818AF00716408 /* Storyboarded.swift in Sources */,
+				361C404527F87F7A00A40020 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +739,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,7 +751,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -697,6 +768,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,7 +780,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
