@@ -8,7 +8,8 @@
 import Foundation
 
 enum ApiUrl: String {
-    case baseURL = "https://jaydemorestaurant.herokuapp.com/home/"
+    case baseURL = "https://restaurant-codefest.herokuapp.com/home/"
+    //case baseURL = "https://jaydemorestaurant.herokuapp.com/home/"
 }
 
 enum ApiEndPoints: String {

@@ -61,6 +61,10 @@ class AuthenticationCoordinator: Coordinator {
         navController?.pushViewController(resetPasswordViewController, animated: true)
     }
     
+    func onLoginSuccess() {
+        //let homeScreenVC = HomeScreenViewController.instantiate(from: .)
+    }
+    
     func finish() {
         
     }

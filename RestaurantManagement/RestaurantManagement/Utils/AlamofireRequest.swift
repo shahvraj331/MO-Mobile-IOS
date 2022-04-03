@@ -8,6 +8,10 @@
 import Foundation
 import Alamofire
 
+class A: Decodable {
+    
+}
+
 class AlamofireRequest {
     
     //MARK: - static functions
@@ -16,16 +20,17 @@ class AlamofireRequest {
         AlamofireRequest.request(controller: controller, url: ApiUrl.baseURL.rawValue + ApiEndPoints.signup.rawValue, method: .post, parameters: singleUser, requiredStatusCode: 201, decodingType: SingleUserResponse.self, completionHandler: completion)
     }
     
-//    static func loginUser(controller: UIViewController, userCredentials: [String : String], completion: @escaping () -> Void) {
-//        AlamofireRequest.request(controller: self, url: ApiUrl.baseURL.rawValue + ApiEndPoints.login.rawValue, method: .post, parameters: userCredentials, requiredStatusCode: 201, decodingType: , completionHandler: completion)
-//    }
+    static func loginUser(controller: UIViewController, userCredentials: [String : String], completion: @escaping (A?) -> Void) {
+        AlamofireRequest.request(controller: controller, url: ApiUrl.baseURL.rawValue + ApiEndPoints.login.rawValue, method: .post, parameters: userCredentials, requiredStatusCode: 200, decodingType: A.self, completionHandler: completion)
+    }
     
     //MARK: - fileprivate, static functions
     fileprivate static func request<T: Decodable>(controller: UIViewController, url: String, method: HTTPMethod, parameters: Parameters? = nil, requiredStatusCode: Int, headers: HTTPHeaders? = nil, decodingType: T.Type, completionHandler completion: @escaping (T?) -> Void) {
         let heades: HTTPHeaders = [
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json"
         ]
-        AF.request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: heades).response { response in
+        AF.request(url, method: method, parameters: parameters, encoding: URLEncoding.queryString, headers: heades).response { response in
             switch response.result {
             case .success(let data):
                 do {

@@ -21,9 +21,7 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTapAround()
-        self.navigationItem.backButtonTitle = ""
-        self.navigationController?.navigationBar.tintColor = UIColor.orange
+        initView()
     }
     
     //MARK: - Actions
@@ -49,11 +47,10 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
         guard let password = tfPassword.text?.trimmingCharacters(in: .whitespaces) else { return }
         
         let currentUserDetails = loginUser(email: email, password: password)
+        coordinator?.onLoginSucess()
 //        AlamofireRequest.loginUser(controller: self, userCredentials: currentUserDetails.loginUserDict) { responseData in
 //            guard let responseData = responseData else { return }
-        
-        coordinator?.onLoginSucess() 
-//
+//            print(responseData)
 //        }
     }
     
@@ -64,6 +61,13 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
         } else {
             coordinator?.startSignUpScreenViewController(isPushedAgain: false)
         }
+    }
+    
+    //MARK: - File private functions
+    fileprivate func initView() {
+        hideKeyboardWhenTapAround()
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
 
 }// End of Class
