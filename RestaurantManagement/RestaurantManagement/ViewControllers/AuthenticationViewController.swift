@@ -15,16 +15,18 @@ class AuthenticationViewController: UIViewController, Storyboarded  {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
     
     //MARK: - Actions
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        coordinator?.startLoginScreenViewController()
+        coordinator?.startLoginScreenViewController(isPushedAgain: false)
     }
     
     @IBAction func signUpButtonAction(_ sender: UIButton) {
-        coordinator?.startSignUpScreenViewController()
+        coordinator?.startSignUpScreenViewController(isPushedAgain: false)
     }
     
     @IBAction func laterButtonAction(_ sender: UIButton) {
