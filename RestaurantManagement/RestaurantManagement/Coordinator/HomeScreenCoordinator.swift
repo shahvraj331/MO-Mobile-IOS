@@ -17,7 +17,7 @@ class HomeScreenCoordinator: Coordinator {
     }
     
     func start() {
-        let homeScreenViewController = HomeScreenViewController.instantiate(from: .authenticationStoryboard)
+        let homeScreenViewController = HomeScreenViewController.instantiate(from: .homeScreen)
         homeScreenViewController.coordinator = self
         navController?.pushViewController(homeScreenViewController, animated: true)
     }

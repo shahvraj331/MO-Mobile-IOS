@@ -18,7 +18,22 @@ class MenuAndTableViewController: UIViewController {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.alpha = 1
+        menuItem.alpha = 0
+    }
+    
+    //MARK: - Actions
+    @IBAction func segmentedControlActionChanged(sender: AnyObject) {
+        switch(sender.selectedSegmentIndex) {
+        case 0:
+            tableView.alpha = 1
+            menuItem.alpha = 0
+        case 1:
+            tableView.alpha = 0
+            menuItem.alpha = 1
+        default:
+            break
+        }
     }
 
 }// End of Class

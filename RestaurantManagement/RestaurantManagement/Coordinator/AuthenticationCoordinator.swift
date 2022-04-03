@@ -33,6 +33,12 @@ class AuthenticationCoordinator: Coordinator {
         }
     }
     
+    func onLoginSucess() {
+        let tabBar = TabBarViewController.instantiate(from: .homeScreen)
+        tabBar.coordinator = HomeScreenCoordinator(self.navController!)
+        navController?.pushViewController(tabBar, animated: true)
+    }
+    
     func startSignUpScreenViewController(isPushedAgain: Bool) {
         if isPushedAgain {
             navController?.popViewController(animated: true)

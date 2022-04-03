@@ -24,6 +24,7 @@ class SignUpScreenViewController: UIViewController, Storyboarded  {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTapAround()
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
