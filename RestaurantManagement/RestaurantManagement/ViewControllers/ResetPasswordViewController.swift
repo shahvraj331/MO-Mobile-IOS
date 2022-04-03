@@ -15,6 +15,10 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
     @IBOutlet weak var btnShowHidePassword: UIButton!
     @IBOutlet weak var btnShowHideReEnterPassword: UIButton!
     @IBOutlet weak var btnChange: UIButton!
+    @IBOutlet weak var viewForTextField: UIView!
+    @IBOutlet weak var viewPassword: UIView!
+    @IBOutlet weak var lblPassword: UILabel!
+    @IBOutlet weak var lblReEnter: UILabel!
     
     //MARK: - Variables
     var coordinator: AuthenticationCoordinator?
@@ -24,6 +28,12 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = UIColor.orange
+        viewForTextField.layer.borderWidth = 1
+        viewForTextField.layer.cornerRadius = CGFloat(10)
+        viewForTextField.layer.borderColor = UIColor.darkGray.cgColor
+        viewPassword.layer.borderWidth = 1
+        viewPassword.layer.cornerRadius = CGFloat(10)
+        viewPassword.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     //MARK: - Actions
