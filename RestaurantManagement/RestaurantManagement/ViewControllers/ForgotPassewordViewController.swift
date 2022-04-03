@@ -12,6 +12,8 @@ class ForgotPassewordViewController: UIViewController, Storyboarded {
     //MARK: - Outlets
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var viewEmail: UIView!
+    @IBOutlet weak var lblEmail: UILabel!
     
     //MARK: - Variables
     var coordinator: AuthenticationCoordinator?
@@ -21,6 +23,9 @@ class ForgotPassewordViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = UIColor.orange
+        viewEmail.layer.borderWidth = 1
+        viewEmail.layer.cornerRadius = CGFloat(10)
+        viewEmail.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     //MARK: - Actions
