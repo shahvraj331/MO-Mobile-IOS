@@ -17,7 +17,7 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
     @IBOutlet weak var btnChange: UIButton!
     
     //MARK: - Variables
-    var coodinator: AuthenticationCoordinator?
+    var coordinator: AuthenticationCoordinator?
     
     //MARK: - UIViewController
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class ResetPasswordViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func changeButtonAction(_ sender: UIButton) {
-        coodinator?.startLoginScreenViewController()
+        coordinator?.startLoginScreenViewController()
     }
     
 }// End of Class
