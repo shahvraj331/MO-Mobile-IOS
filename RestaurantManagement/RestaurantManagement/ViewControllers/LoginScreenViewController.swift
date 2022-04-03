@@ -21,6 +21,7 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
     //MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTapAround()
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = UIColor.orange
     }
@@ -50,6 +51,8 @@ class LoginScreenViewController: UIViewController, Storyboarded  {
         let currentUserDetails = loginUser(email: email, password: password)
 //        AlamofireRequest.loginUser(controller: self, userCredentials: currentUserDetails.loginUserDict) { responseData in
 //            guard let responseData = responseData else { return }
+        
+        coordinator?.onLoginSucess() 
 //
 //        }
     }
